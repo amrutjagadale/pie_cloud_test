@@ -1,4 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--  Permission to use the camera  -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--  Permission to read from external storage (for picking images)  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--  Optional: Permission to write to external storage (if your app saves files)  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:label="pie_coud_test"
         android:name="${applicationName}"
@@ -30,6 +38,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCwaE9h3MqZ9LTZ-0H71SlPFl6vdRm1Xb0"/>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

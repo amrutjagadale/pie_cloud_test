@@ -1,3 +1,13 @@
+buildscript {
+    extra["kotlin_version"] = "1.8.10"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.2")
+    }
+}
 allprojects {
     repositories {
         google()
